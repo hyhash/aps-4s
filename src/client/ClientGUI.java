@@ -511,6 +511,7 @@ public class ClientGUI extends JFrame {
             switch (msg.getType()) {
                 case TEXT:
                 case PRIVATE:
+                    if(msg.getSender().equals(client.getUsername())) break; // já renderizado no envio
                     appendMessage(msg, false);
                     break;
                 case SERVER_INFO:
