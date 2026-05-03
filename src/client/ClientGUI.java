@@ -73,10 +73,10 @@ public class ClientGUI extends JFrame {
         hdr.setBackground(C_GREEN);
         hdr.setBorder(new EmptyBorder(16, 20, 16, 20));
         JLabel hTitle = new JLabel("Sistema de Monitoramento do Rio Tietê");
-        hTitle.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        hTitle.setFont(new Font("Segoe UI Emoji", Font.BOLD, 14));
         hTitle.setForeground(C_WHITE);
         JLabel hSub = new JLabel("UNIP - Ciência da Computação - APS 2025");
-        hSub.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+        hSub.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 11));
         hSub.setForeground(new Color(190, 235, 210));
         JPanel hText = new JPanel(new GridLayout(2,1,0,2));
         hText.setOpaque(false);
@@ -103,7 +103,7 @@ public class ClientGUI extends JFrame {
         // Dica ngrok
         JLabel ngrokHint = new JLabel(
             "<html><font color='#555555'>Para acesso externo via ngrok: use o host e porta fornecidos pelo ngrok</font></html>");
-        ngrokHint.setFont(new Font("Segoe UI", Font.ITALIC, 11));
+        ngrokHint.setFont(new Font("Segoe UI Emoji", Font.ITALIC, 11));
         g.gridx=0; g.gridy=3; g.gridwidth=2;
         form.add(ngrokHint, g);
         g.gridwidth=1;
@@ -112,7 +112,7 @@ public class ClientGUI extends JFrame {
         JButton connectBtn = new JButton("Conectar");
         connectBtn.setBackground(C_GREEN);
         connectBtn.setForeground(C_WHITE);
-        connectBtn.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        connectBtn.setFont(new Font("Segoe UI Emoji", Font.BOLD, 14));
         connectBtn.setFocusPainted(false);
         connectBtn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         connectBtn.setBorder(new EmptyBorder(10, 30, 10, 30));
@@ -169,7 +169,7 @@ public class ClientGUI extends JFrame {
 
     private JTextField styledField(String text) {
         JTextField f = new JTextField(text);
-        f.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+        f.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
         f.setBorder(BorderFactory.createCompoundBorder(
             BorderFactory.createLineBorder(C_BORDER),
             new EmptyBorder(5, 8, 5, 8)));
@@ -179,7 +179,7 @@ public class ClientGUI extends JFrame {
     private void addRow(JPanel p, GridBagConstraints g, int row, String label, JTextField field) {
         g.gridx=0; g.gridy=row; g.weightx=0.38;
         JLabel lbl = new JLabel(label);
-        lbl.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+        lbl.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 12));
         p.add(lbl, g);
         g.gridx=1; g.weightx=0.62;
         p.add(field, g);
@@ -203,14 +203,14 @@ public class ClientGUI extends JFrame {
         hdr.setBorder(new EmptyBorder(10, 18, 10, 18));
 
         JLabel title = new JLabel("Secretaria do Meio Ambiente – Monitoramento Rio Tietê");
-        title.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        title.setFont(new Font("Segoe UI Emoji", Font.BOLD, 14));
         title.setForeground(C_WHITE);
 
         JPanel right = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));
         right.setOpaque(false);
 
         statusLabel = new JLabel("● Conectado");
-        statusLabel.setFont(new Font("Segoe UI", Font.BOLD, 12));
+        statusLabel.setFont(new Font("Segoe UI Emoji", Font.BOLD, 12));
         statusLabel.setForeground(new Color(150, 255, 150));
 
         right.add(statusLabel);
@@ -234,7 +234,7 @@ public class ClientGUI extends JFrame {
         // Painel de usuários
         userListModel = new DefaultListModel<>();
         userList = new JList<>(userListModel);
-        userList.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+        userList.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
         userList.setBackground(new Color(235, 248, 240));
         userList.setSelectionBackground(C_GREEN2);
         userList.setSelectionForeground(C_WHITE);
@@ -244,7 +244,7 @@ public class ClientGUI extends JFrame {
         userScroll.setBorder(null);
 
         JLabel usersTitle = new JLabel("  Inspetores Online");
-        usersTitle.setFont(new Font("Segoe UI", Font.BOLD, 12));
+        usersTitle.setFont(new Font("Segoe UI Emoji", Font.BOLD, 12));
         usersTitle.setForeground(C_GREEN);
         usersTitle.setBorder(new EmptyBorder(10, 8, 10, 8));
         usersTitle.setOpaque(true);
@@ -276,12 +276,12 @@ public class ClientGUI extends JFrame {
 
         // Destinatário
         JLabel toLabel = new JLabel("Para:");
-        toLabel.setFont(new Font("Segoe UI", Font.BOLD, 12));
+        toLabel.setFont(new Font("Segoe UI Emoji", Font.BOLD, 12));
         toLabel.setForeground(new Color(80, 80, 80));
 
         recipientCombo = new JComboBox<>();
         recipientCombo.addItem(BROADCAST);
-        recipientCombo.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+        recipientCombo.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 12));
         recipientCombo.setPreferredSize(new Dimension(150, 28));
         recipientCombo.setToolTipText("Selecione o destinatário");
 
@@ -310,7 +310,7 @@ public class ClientGUI extends JFrame {
         bottomBar.setBorder(new EmptyBorder(8, 12, 8, 12));
 
         inputField = new JTextField();
-        inputField.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+        inputField.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 14));
         inputField.setBorder(BorderFactory.createCompoundBorder(
             BorderFactory.createLineBorder(C_BORDER),
             new EmptyBorder(7, 10, 7, 10)));
@@ -319,7 +319,7 @@ public class ClientGUI extends JFrame {
         sendBtn = new JButton("Enviar");
         sendBtn.setBackground(C_GREEN);
         sendBtn.setForeground(C_WHITE);
-        sendBtn.setFont(new Font("Segoe UI", Font.BOLD, 13));
+        sendBtn.setFont(new Font("Segoe UI Emoji", Font.BOLD, 13));
         sendBtn.setFocusPainted(false);
         sendBtn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         sendBtn.setBorder(new EmptyBorder(9, 22, 9, 22));
@@ -341,7 +341,7 @@ public class ClientGUI extends JFrame {
     /** Cria botão de ferramenta (emoji / arquivo) com label clara e estável */
     private JButton buildToolButton(String label, String tooltip, Color bg) {
         JButton btn = new JButton(label);
-        btn.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+        btn.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 12));
         btn.setToolTipText(tooltip);
         btn.setBackground(bg);
         btn.setForeground(new Color(50, 50, 50));
@@ -437,7 +437,7 @@ public class ClientGUI extends JFrame {
             new EmptyBorder(8, 8, 8, 8)));
 
         JLabel title = new JLabel("  Selecione um emoji:");
-        title.setFont(new Font("Segoe UI", Font.BOLD, 11));
+        title.setFont(new Font("Segoe UI Emoji", Font.BOLD, 11));
         title.setForeground(new Color(80, 80, 80));
         title.setBorder(new EmptyBorder(0, 0, 6, 0));
 
@@ -456,6 +456,13 @@ public class ClientGUI extends JFrame {
                 btn.setOpaque(true);
                 btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 btn.setToolTipText(emoji);
+
+                btn.setBackground(new Color(230, 248, 238));
+                btn.setBorderPainted(true);
+                btn.setBorder(BorderFactory.createLineBorder(C_GREEN2, 1));
+
+                btn.setBackground(C_WHITE);
+                btn.setBorderPainted(false);
 
                 // Hover estável sem glitch
                 btn.addMouseListener(new MouseAdapter() {
@@ -607,11 +614,11 @@ public class ClientGUI extends JFrame {
         iconLbl.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 20));
 
         JLabel nameLbl = new JLabel(fileName + "  (" + formatSize(data.length) + ")");
-        nameLbl.setFont(new Font("Segoe UI", Font.BOLD, 12));
+        nameLbl.setFont(new Font("Segoe UI Emoji", Font.BOLD, 12));
         nameLbl.setForeground(new Color(30, 30, 80));
 
         JButton downloadBtn = new JButton("Baixar");
-        downloadBtn.setFont(new Font("Segoe UI", Font.BOLD, 11));
+        downloadBtn.setFont(new Font("Segoe UI Emoji", Font.BOLD, 11));
         downloadBtn.setBackground(C_GREEN);
         downloadBtn.setForeground(C_WHITE);
         downloadBtn.setFocusPainted(false);
@@ -658,7 +665,7 @@ public class ClientGUI extends JFrame {
             StyleConstants.setForeground(s, color);
             StyleConstants.setBold(s, bold);
             StyleConstants.setFontSize(s, size);
-            StyleConstants.setFontFamily(s, "Segoe UI");
+            StyleConstants.setFontFamily(s, "Segoe UI Emoji");
             chatDoc.insertString(chatDoc.getLength(), text, s);
             chatArea.setCaretPosition(chatDoc.getLength());
         } catch (BadLocationException ignored) {}
@@ -729,7 +736,7 @@ public class ClientGUI extends JFrame {
                 int index, boolean isSelected, boolean cellHasFocus) {
             JLabel lbl = (JLabel) super.getListCellRendererComponent(
                 list, "  " + value, index, isSelected, cellHasFocus);
-            lbl.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+            lbl.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
             lbl.setBorder(BorderFactory.createCompoundBorder(
                 BorderFactory.createMatteBorder(0, 0, 1, 0, new Color(210, 235, 220)),
                 new EmptyBorder(6, 10, 6, 10)));

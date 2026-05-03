@@ -71,7 +71,7 @@ public class ChatServer {
 
         // Notifica todos sobre a entrada
         broadcast(new Message(Message.Type.SERVER_INFO, "SERVIDOR",
-                "Inspetor [" + name + "] entrou no sistema. Online: " + clients.size()), null);
+                "Inspetor [" + name + "] entrou no sistema. Online: " + clients.size() + "\n"), null);
 
         // Envia lista atualizada para TODOS os clientes conectados
         broadcastUserList();
@@ -84,7 +84,7 @@ public class ChatServer {
 
         // Notifica todos sobre a saída
         broadcast(new Message(Message.Type.SERVER_INFO, "SERVIDOR",
-                "Inspetor [" + name + "] saiu do sistema. Online: " + clients.size()), null);
+                "Inspetor [" + name + "] saiu do sistema. Online: " + clients.size() + "\n"), null);
 
         // Envia lista atualizada para TODOS os clientes restantes
         broadcastUserList();
